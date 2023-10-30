@@ -3,9 +3,9 @@ const show = (entries, obs) => {
         if (entry.isIntersecting) {
             const keyframes = {
                 opacity: [0, 1],
-                translate: ['200px 0', 0]
+                translate: ['0 500px', 0]
             }
-            entry.target.animate(keyframes, 600);
+            entry.target.animate(keyframes, 1000);
 
             obs.unobserve(entry.target);
         }
